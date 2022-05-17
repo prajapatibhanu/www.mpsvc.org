@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="AdminSection_AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <title>Madhya Pradesh State Veterinary Council</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/news.css" rel="stylesheet" type="text/css" />
+    <link href="../css/slider.css" rel="stylesheet" type="text/css" />
+    <link href="../css/MyStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/CommonCtrl.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="top-bar" id="changeFont">
+        <%--<a href="#wrapper" title="Skip to main content">Skip to main content / Screen Reader Access</a> &nbsp; 
+	 
+	<a href="#" class="resetFont">A</a>
+	  
+	<a href="#" class="increaseFont">A<sup>+</sup></a> 
+	 
+	<a href="#" class="increaseFont2"><b>A<sup>+</sup></b></a>  &nbsp;  
+	
+	<a href="#" class="whtbg">A</a>  
+	 
+	<a href="#" class="blkbg">A</a> --%>
+        <%--<img src="../images/top-icon.png" border="0" usemap="#Map" />
+	
+		<map name="Map"><area shape="rect" coords="0,1,12,12" title="Home" href="#">
+		
+		<area shape="rect" coords="28,1,40,12" href="#">
+		
+		<area shape="rect" coords="54,1,65,12"  title="Contact Us" href="#"></map>
+			
+	<span class="ML12" id="menu">English 
+		
+		<div class="flyout">
+		
+			<a href="#">Hindi</a><br>
+			
+			<a href="#">English</a>
+			
+		</div>
+		
+	</span>--%>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="logo">
+            <h2>
+                Madhya Pradesh State<br>
+                Veterinary Council</h2>
+        </div>
+        <%--<div class="FR">	
+		<a href="Login.aspx" class="button"><span class="icon-login"></span><p>Login</p></a>&nbsp;
+		<a href="#" class="button"><span class="icon-register"></span><p>Registration</p></a>
+		<p><input type="text" class="search" Placeholder="Search" />
+	</div>--%>
+        <div class="CL">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="AdminHome.aspx" title="Home">Home</a></li> <li><a href="#" title="About Us">Master</a>
+                    <ul>
+                        <li><a href="SectorMaster.aspx">Sector Maste</a></li>
+                        <li><a href="UniversityMaster.aspx">University Master</a></li>
+                        <li><a href="CollegeMaster.aspx">College Master</a></li>
+                        <li><a href="OrganizationMaster.aspx">Organization Master</a></li>
+                        <li><a href="DepartmentMaster.aspx">Department Master</a></li>
+                         <li><a href="DesignationMaster.aspx">Designation Master</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#" title="About Us">Registration</a>
+                    <ul>
+                        <li><a href="ViewNewRegistration.aspx?Mt=New Registration">New Registration</a></li>
+                        <li><a href="#">Provisional Registration</a></li>
+                        <li><a href="#">Renewal Registration</a></li>
+                        <li><a href="#">Duplicate Registration</a></li>
+                        <li><a href="#">Transfer Registration</a></li>
+                    </ul>
+                </li>
+                  <li><a href="#" title="Others">Others</a>
+                 <ul>
+                        <li><a href="SendEmailOrSms.aspx?Mt=Send Email/Send SMS">Send Email/Send SMS</a></li>
+                      <%--  <li><a href="SendEmailOrSms.aspx?Mt=Send SMS">Send SMS</a></li>--%>
+                        
+                    </ul>
+                </li>
+                <li><a href="#" title="Reports">Reports</a>
+                    <ul>
+                        <li><a href="RegistrationDetails.aspx?Mt=Registration Details">Registration Details</a></li>
+                        <%--<li><a href="#">General</a></li>--%>
+                    </ul>
+                </li>
+              
+               <%-- <li><a href="#" title="CVE">CVE</a></li>
+                <li><a href="#" title="Photo Gallery">Photo Gallery</a></li>
+                <li><a href="#" title="Contct Us" class="last">Contct Us</a></li>--%>
+                    <li>  <asp:LinkButton ID="lnkLogout" runat="server" CausesValidation="false" 
+                            onclick="lnkLogout_Click">Logout</asp:LinkButton></li>
+            </ul>
+          
+            <div class="CL">
+            </div>
+        </div>
+        <div class="MT10">
+            <!-- Breadcrumb Example Here -->
+            <div id="breadcrumb">
+                <ul class="crumbs">
+                    <li><a href="#" class="first">Home</a></li>
+                    <li>
+                        <%=UlAddress %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="MT20" style="min-height: 500px;">
+            <div class="MT20">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div class="ftr_logo">
+        <a href="http://india.gov.in" target="_blank">
+            <img src="../images/india_gov_logo.jpg" alt="National Portal of India" title="National Portal of India" /></a>
+        <a href="http://mygov.in" target="_blank">
+            <img src="../images/my_gov_logo.jpg" alt="My Gov" title="My Gov" /></a>
+    </div>
+    <div class="footer">
+        <div class="footer-cnt">
+            <div class="FL">
+                <a href="#">Accessibility Statement</a> | <a href="#">Terms of Use</a> | <a href="#">
+                    Disclaimer</a> | <a href="#">Privacy Policy</a>
+            </div>
+            <div class="FR">
+                2015 &copy; Content Owned by Madhya Pradesh State Veterinary Council.
+            </div>
+            <div class="CL">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+    <script type="text/javascript" language="javascript">
+
+
+        $(document).ready(function () {
+            // Reset Font Size
+            var originalFontSize = $('html').css('font-size');
+            $(".resetFont").click(function () {
+                $('html').css('font-size', originalFontSize);
+            });
+            // Increase Font Size
+            $(".increaseFont").click(function () {
+                var currentFontSize = $('html').css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = 13;
+                $('html').css('font-size', newFontSize);
+                return false;
+            });
+
+            $(".increaseFont2").click(function () {
+                var currentFontSize = $('html').css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = 14;
+                $('html').css('font-size', newFontSize);
+                return false;
+            });
+        });
+        $(document).ready(function () {
+            $("#breakingnews1").BreakingNews();
+
+            $("#breakingnews2").BreakingNews({
+                background: '#e9e9df',
+                //title			:'NEWS',
+                //titlecolor		:'#FFF',
+                titlebgcolor: '#01baf2',
+                linkcolor: '#0f0f0f',
+                linkhovercolor: '#01baf2',
+                fonttextsize: 14,
+                isbold: false,
+                //border			:'solid 1px #099',
+                width: '100%',
+                timer: 2000,
+                autoplay: true,
+                effect: 'slide'
+
+            });
+
+            $('#apply').click(function (e) {
+                addValues();
+            });
+            addValues();
+        });
+
+        $(window).load(function () {
+
+            $('#slider').nivoSlider();
+
+        });
+
+        $('.popup-opener').bind('click', function (e) {
+            e.preventDefault();
+            $($(this).attr('popup-element')).bPopup();
+        });
+
+        $("#menu").click(function () {
+
+            $(".flyout").toggle();
+
+        });
+	
+    </script>
+    </form>
+</body>
+</html>

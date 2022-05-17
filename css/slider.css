@@ -1,0 +1,39 @@
+.slider-wrapper { min-width: 660px; float: left; width: 100%; }
+.nivoSlider { position: relative; }
+.nivoSlider img { position: absolute; top: 0px; left: 0px; }
+/* If an image is wrapped in a link */
+
+.nivoSlider a.nivo-imageLink { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; z-index: 6; display: none; }
+/* The slices and boxes in the Slider */
+.nivo-slice { display: block; position: absolute; z-index: 5; height: 100%; }
+.nivo-box { display: block; position: absolute; z-index: 5; }
+/* Caption styles */
+
+.nivo-caption { position: absolute; left: 0px; bottom: 0px; background: #000; color: #fff; opacity: 0.7!important; /* Overridden by captionOpacity setting */ width: 100%; z-index: 8; }
+.nivo-caption p { padding: 10px; margin: 0; }
+.nivo-caption a { display: inline !important; }
+.nivo-html-caption { display: none; }
+/* Direction nav styles (e.g. Next & Prev) */
+
+.nivo-directionNav a { position: absolute; top: 45%; z-index: 9; cursor: pointer; }
+.nivo-prevNav { left: 0px; }
+.nivo-nextNav { right: 0px; }
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a { position: relative; z-index: 9; cursor: pointer; }
+.nivo-controlNav a.active { font-weight: bold; }
+.theme-default .nivoSlider { position: relative; background: url(../images/loading.gif) no-repeat 50% 50%; height: 345px; border: 1px solid #757575; }
+.theme-default .nivoSlider img { position: absolute; top: 0px; left: 0px; display: none; }
+.theme-default .nivoSlider a { border: 0; display: block; }
+.theme-default .nivo-controlNav { position: absolute; right: 0; bottom: 0px; margin-right: 0px; /* Tweak this to center bullets */ padding: 5px 10px; z-index: 100; }
+.theme-default .nivo-controlNav a { display: block; width: 22px; height: 22px; background: url(../images/bullets.png) no-repeat; text-indent: -9999px; border: 0; margin-top: 6px; margin-right: 0px; float: left; }
+.theme-default .nivo-controlNav a.active { background-position: 0 -24px; }
+.theme-default .nivo-directionNav a { display: block; width: 30px; height: 30px; text-indent: -9999px; border: 0; }
+.theme-default .nivo-directionNav a { _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='images/arrows.png', );
+width: 15px; height: 30px; }
+.theme-default a.nivo-nextNav { background: url(../images/arrowsrgt.png) no-repeat; _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='images/arrowsrgt.png', );
+right: 15px; width: 30px; height: 30px; }
+.theme-default a.nivo-prevNav { background: url(../images/arrowsleft.png) no-repeat; _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='images/arrowsleft.png', );
+left: 15px; width: 30px; height: 30px; }
+.theme-default .nivo-caption { font-family: Arial, sans-serif; font-size: 14px; }
+.theme-default .nivo-caption a { color: #fff; border-bottom: 1px dotted #fff; }
+.theme-default .nivo-caption a:hover { color: #fff; }
