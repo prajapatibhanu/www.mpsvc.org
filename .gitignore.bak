@@ -1,3 +1,2 @@
-
-# ignore folder
-* .dll
+*.dll
+!spec/*.dll
